@@ -73,5 +73,9 @@ func createBuildErrorsLog(message string) bool {
 func removeBuildErrorsLog() error {
 	err := os.Remove(settings.BuildErrorPath)
 
+	if os.IsNotExist(err) {
+		return nil
+	}
+
 	return err
 }
