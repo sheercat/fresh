@@ -15,7 +15,7 @@ package main
 import (
 	"flag"
 
-	"github.com/c2h5oh/fresh/runner"
+	"github.com/sheercat/fresh/runner"
 )
 
 func main() {
